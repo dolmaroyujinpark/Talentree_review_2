@@ -19,11 +19,11 @@ public class ReviewController {
 
     @GetMapping("/reviewResult")
     public String reviewResult(Model model) {
-        model.addAttribute("newSkillCount", reviewService.getCount("새로운 능력을 얻었어요"));
-        model.addAttribute("kindTransactionCount", reviewService.getCount("친절한 거래"));
-        model.addAttribute("fastResponseCount", reviewService.getCount("채팅 답변이 빨라요"));
-        model.addAttribute("lifeImprovementCount", reviewService.getCount("생활의 질 향상"));
-        model.addAttribute("hobbyIncreaseCount", reviewService.getCount("취미를 늘릴 수 있었어요"));
+        model.addAttribute("newSkillCount", reviewService.getCount("배우는 시간이 보람찼어요"));
+        model.addAttribute("kindTransactionCount", reviewService.getCount("매너가 좋아요"));
+        model.addAttribute("fastResponseCount", reviewService.getCount("답변이 빨라요"));
+        model.addAttribute("lifeImprovementCount", reviewService.getCount("시간 약속을 잘 지켜요"));
+        model.addAttribute("hobbyIncreaseCount", reviewService.getCount("열정적이에요"));
 
         return "reviewResult";
     }
